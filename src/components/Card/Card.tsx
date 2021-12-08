@@ -1,10 +1,15 @@
 import React from 'react';
 
-import { CardForm } from './styled';
+import Arrow from '../Arrow/Arrow';
+
+import { CardWrapper } from './styled';
 
 const Card = () => {
   return (
-    <CardForm />
+    <CardWrapper>
+      <Arrow />
+    </CardWrapper>
+
   )
 }
 
