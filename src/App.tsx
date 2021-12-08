@@ -3,10 +3,11 @@ import Button from './components/shared/Button';
 
 import Card from './components/shared/Card/Card';
 
+import Card from './components/Card/Card'
+
 function App() {
   return (
     <>
-      <h1>Flashcards</h1>
       <Card />
     </>
 
