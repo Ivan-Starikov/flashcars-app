@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.div`
+  
   width: 20rem;
   margin: 0 auto;
   height: 24rem;
@@ -14,4 +15,12 @@ export const CardWrapper = styled.div`
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12)
+`
+
+export const ArrowWrapper = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+
 `
