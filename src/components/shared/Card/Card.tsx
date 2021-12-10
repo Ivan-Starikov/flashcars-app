@@ -2,12 +2,15 @@ import React from 'react';
 
 import Arrow from '../Arrow/Arrow';
 
-import { CardWrapper } from './styled';
+import { CardWrapper, ArrowWrapper } from './styled';
 
 const Card = () => {
   return (
     <CardWrapper>
-      <Arrow />
+      <ArrowWrapper>
+        <Arrow side="left" />
+        <Arrow side="right" />
+      </ArrowWrapper>
     </CardWrapper>
 
   )

@@ -2,11 +2,18 @@ import React from 'react';
 
 import { LeftArrowIcon, RightArrowIcon } from './styled';
 
-const Arrow = () => {
+type ArrowProps = {
+  side: string;
+}
+
+const Arrow = ({ side }:ArrowProps) => {
   return (
     <>
-      <LeftArrowIcon />
-      <RightArrowIcon />
+      {side === "left" ? (
+        <LeftArrowIcon />
+      ) : (
+        <RightArrowIcon />
+      )}
     </>
   )
 }
