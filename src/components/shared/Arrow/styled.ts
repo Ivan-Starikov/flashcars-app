@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ReactComponent as LeftArrow } from '../../../assets/icons/left-arrow.svg';
 import { ReactComponent as RightArrow } from '../../../assets/icons/right-arrow.svg';
 
-const arrowCommon = `
+const arrow =`
   width: 2.7rem;
   height: 2.7rem;
   position: absolute;
@@ -11,11 +11,11 @@ const arrowCommon = `
 `
 
 export const LeftArrowIcon = styled(LeftArrow)`
-  ${arrowCommon};
+  ${arrow};
   left: -3.5rem;
 `
 export const RightArrowIcon = styled(RightArrow)`
-  ${arrowCommon};
+  ${arrow};
   right: -3.5rem;
 `
 
