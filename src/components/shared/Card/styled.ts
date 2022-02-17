@@ -7,7 +7,6 @@ export const CardWrapper = styled.div(
     height: 24rem;
     background-color: ${colors.green};
     border-radius: 0.5rem;
-    border: 1px solid #d9d9d9;
     box-shadow:
       0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 6.7px 5.3px rgba(0, 0, 0, 0.048),

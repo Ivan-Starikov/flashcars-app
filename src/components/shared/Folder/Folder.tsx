@@ -1,10 +1,14 @@
 import React from 'react';
 
+import PlusButton from '../PlusButton/PlusButton';
+
 import { FolderWrapper } from './styled';
 
 const Folder = () => {
   return (
-    <FolderWrapper />
+    <FolderWrapper>
+      <PlusButton />
+    </FolderWrapper>
 
   )
 };

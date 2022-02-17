@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import Cards from './pages/Cards';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 
 import GlobalStyles from './assets/styles/global';
 import theme from './assets/styles/theme';
