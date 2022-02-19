@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { ReactComponent as Plus } from '../../../assets/icons/plus.svg';
+import { ReactComponent as Plus } from '../../assets/icons/plus.svg';
 
 export const PlusIcon = styled(Plus)(
   ({theme: { colors } }) => css`

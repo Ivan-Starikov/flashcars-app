@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { ReactComponent as LeftArrow } from '../../../assets/icons/left-arrow.svg';
-import { ReactComponent as RightArrow } from '../../../assets/icons/right-arrow.svg';
+import { ReactComponent as LeftArrow } from '../../assets/icons/left-arrow.svg';
+import { ReactComponent as RightArrow } from '../../assets/icons/right-arrow.svg';
 
 const arrow =`
   width: 2.7rem;

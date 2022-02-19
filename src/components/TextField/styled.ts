@@ -11,6 +11,6 @@ import styled, { css } from "styled-components";
     border-radius: 0.5rem;
   `)
 
-  export const TextField = styled.div`
+  export const Text = styled.div`
     padding: 1.5rem 0.5rem;
   `

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Folder from '../../components/shared/Folder/Folder';
+import Folder from '../../components/Folder/Folder';
 
 import { HomeWrapper, Header, FolderWrapper } from './styled';
 
