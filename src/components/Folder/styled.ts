@@ -1,5 +1,7 @@
 import styled, { css } from "styled-components";
 
+import { ReactComponent as Menu }  from '../../assets/icons/menu.svg';
+
 export const FolderWrapper = styled.div(
   ({theme: { colors } }) => css`
     display: flex;
@@ -19,7 +21,9 @@ export const FolderWrapper = styled.div(
       0 41.8px 33.4px rgba(0, 0, 0, 0.086),
       0 100px 80px rgba(0, 0, 0, 0.12);
     &:hover {
-      border: 1px solid ${colors.lightGray};
+      background-color: ${colors.darkGreen};
     }
   `
-)
+);
+
+export const MenuIcon = styled(Menu)``

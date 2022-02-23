@@ -2,12 +2,21 @@ import React from 'react';
 
 import PlusButton from '../PlusButton/PlusButton';
 
-import { FolderWrapper } from './styled';
+import { FolderWrapper, MenuIcon } from './styled';
 
-const Folder = () => {
+interface IProps {
+  newFolder: boolean;
+}
+
+const Folder = ({ newFolder: boolean}:IProps) => {
   return (
     <FolderWrapper>
-      <PlusButton />
+      {newFolder ? (
+        <PlusButton />
+      ) : (
+        <MenuIcon />
+      )}
+      <MenuIcon />
     </FolderWrapper>
 
   )

@@ -10,5 +10,9 @@ export const Header = styled.div`
 `;
 
 export const FolderWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 3rem;
+  column-gap: 1rem;
   margin: 0 3rem; 
 `
