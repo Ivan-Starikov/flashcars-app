@@ -1,12 +1,13 @@
 import styled, { css } from "styled-components";
+import { Props } from './TextField';
 
- export const FieldWrapper = styled.div(
-  ({ theme: { colors } }) => css`
+ export const FieldWrapper = styled.div<Props>(
+  ({ theme: { colors }, width }) => css`
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: ${colors.beige};
-    width: 75%;
+    width: ${width ? width : 'auto'};
     height: auto;
     border-radius: 0.5rem;
   `)

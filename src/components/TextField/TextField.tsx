@@ -2,10 +2,15 @@ import React from 'react';
 
 import { FieldWrapper, Text } from './styled';
 
-const TextField = () => {
+export type Props = {
+  children: React.ReactNode;
+  width?: string;
+}
+
+const TextField = ({ width, children }:Props) => {
   return (
-    <FieldWrapper>
-      <Text>Some text</Text>
+    <FieldWrapper width={width}>
+      <Text>{children}</Text>
     </FieldWrapper>
 
   )

@@ -5,7 +5,7 @@ import { ThemeProvider } from 'styled-components';
 
 import Cards from './pages/Cards';
 import Home from './pages/home/Home';
-import Manage from './pages/manage_cards/Manage';
+import Manage from './pages/manageCards/Manage';
 
 import GlobalStyles from './assets/styles/global';
 import theme from './assets/styles/theme';

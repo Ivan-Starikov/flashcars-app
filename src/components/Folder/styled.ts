@@ -7,6 +7,7 @@ export const FolderWrapper = styled.div(
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 8rem;
     height: 8rem;
     cursor: pointer;
@@ -26,4 +27,12 @@ export const FolderWrapper = styled.div(
   `
 );
 
-export const MenuIcon = styled(Menu)``
+export const MenuIcon = styled(Menu)`
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+`
+
+export const FolderName = styled.div`
+  padding: 0 0.5rem;
+`

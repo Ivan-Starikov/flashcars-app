@@ -9,7 +9,7 @@ const Card = () => {
   return (
     <CardWrapper>
       <ArrowWrapper>
-        <TextField />
+        <TextField width="80%">Text</TextField>
         <Arrow side="left" />
         <Arrow side="right" />
       </ArrowWrapper>
