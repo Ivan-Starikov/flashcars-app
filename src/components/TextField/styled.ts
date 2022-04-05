@@ -8,7 +8,7 @@ import { Props } from './TextField';
     align-items: center;
     background-color: ${colors.beige};
     width: ${width ? width : 'auto'};
-    height: auto;
+    min-height: auto;
     border-radius: 0.5rem;
   `)
 

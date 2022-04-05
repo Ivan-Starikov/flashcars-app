@@ -3,9 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 
 import { ThemeProvider } from 'styled-components';
 
-import Cards from './pages/Cards';
-import Home from './pages/home/Home';
-import Manage from './pages/manageCards/Manage';
+import Cards from './pages/CardPage/Cards';
+import Home from './pages/Home/Home';
+import Manage from './pages/ManageCards/Manage';
 
 import GlobalStyles from './assets/styles/global';
 import theme from './assets/styles/theme';
