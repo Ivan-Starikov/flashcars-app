@@ -1,10 +1,6 @@
 import styled, { css } from 'styled-components';
 
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
-
-
-
-export const SlideWrapper = styled.div(
+export const CardWrapper = styled.div(
   ({ theme: { colors } }) => css`
     width: 20rem;
     height: 24rem;
@@ -20,9 +16,10 @@ export const SlideWrapper = styled.div(
       0 100px 80px rgba(0, 0, 0, 0.12); 
 `)
 
-export const SliderItem = styled.div`
+export const ArrowWrapper = styled.div`
   display: flex;
   justify-content: center;
   height: 100%;
   align-items: center;
+  position: relative;
 `

@@ -1,51 +1,41 @@
 import React from 'react';
 
-import { Swiper, SwiperSlide } from 'swiper/react/swiper-react.js';
-
-import { Navigation } from 'swiper';
-
+import Arrow from '../Arrow/Arrow';
 import TextField from '../TextField/TextField';
 
-import 'swiper/swiper-bundle.min.css'
-import 'swiper/swiper.min.css'
-import 'swiper/modules/navigation/navigation.min.css'
+import { CardWrapper, ArrowWrapper } from './styled';
 
-import { SlideWrapper, SliderItem } from './styled';
+export type Props = {
+  id: number;
+  term: string;
+  definition: string;
+}
 
 const cards = [
   {
+    id: 1,
     term: 'Hi',
     definition: 'Greating word'
   }, 
   {
+    id: 2,
     term: 'Bye',
     definition: 'A word we say in the end of the meeting'
   }, 
 ]
 
-const Card = () => {
+const Card = ({ id, term, definition }):Props => {
   return (
     <>
-      <Swiper
-        slidesPerView={1}
-        navigation={true}
-        modules={[Navigation]}
-        >
-        <SwiperSlide>
-          <SlideWrapper>
-            <SliderItem>
-              <TextField width='80%'>1</TextField>
-            </SliderItem>
-          </SlideWrapper>
-        </SwiperSlide>
-        <SwiperSlide>
-          <SlideWrapper>
-            <SliderItem>
-              <TextField width='80%'>2</TextField>
-            </SliderItem>
-          </SlideWrapper>
-        </SwiperSlide>
-      </Swiper>
+      <CardWrapper>
+        <ArrowWrapper>
+          {cards.map(card => {
+            <TextField width="80%">{card.term}}</TextField>
+          })}
+          <Arrow side="left" />
+          <Arrow side="right" />
+        </ArrowWrapper>
+    </CardWrapper>
     </>
   )
 }
